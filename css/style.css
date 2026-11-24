@@ -1,1 +1,62 @@
 /* Här skrivs all din CSS */
+
+
+
+.container {
+    /* background-image: url(/img/spotlight_straight.jpg); */
+    /* background-position: cover; */
+   
+
+    display: grid;
+    min-height: 100vh;
+    min-width: 100vw;
+    
+    grid-template-areas:
+    '. . . . . . .'
+    'hd hd hd . nav nav .'
+    '. . . . . . .'
+    '. . main main main . .'
+    '. . . . . . .'
+    '. . footer footer footer . .'
+    ;
+    grid-template-columns: 5% 10% 10% 5% 55% 10% 5%;
+    grid-template-rows:
+    2%
+    10%
+    5%
+    60%
+    10%
+    15%
+    ;
+
+}
+
+header {
+    grid-area: hd;
+    background-color: red;
+    
+
+
+}
+
+nav {
+    grid-area: nav;
+    background-color: blue;
+
+
+}
+
+main {
+    grid-area: main;
+    background-color: yellow;
+    
+
+
+}
+
+footer {
+    grid-area: footer;
+    background-color: green;
+
+
+}
